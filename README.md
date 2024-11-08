@@ -1,1 +1,1 @@
-This is my version of client for spacetraders API at https://spacetraders.io/
+# This is my version of client for spacetraders API at [SpaceTraders.io](https://spacetraders.io/)
