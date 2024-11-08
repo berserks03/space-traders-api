@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif;
+    background-color: #0a0a23;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('/images/space-bg.webp');
+    background-size: cover;
+    background-position: center;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-title,
+.hero-subtitle,
+.hero-button {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title,
+.hero-subtitle {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-subtitle {
+    margin: 10px 0 30px;
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.hero-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #3d5afe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #536dfe;
+}
+
+.features {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature-item {
+    width: 200px;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 2em;
+}
+
+.feature-title {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.feature-description {
+    color: #aaaaaa;
+}
